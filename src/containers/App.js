@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import Count from './Count';
+import '../App.css';
+import Count from '../components/Count';
 export class App extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +14,7 @@ export class App extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     console.log(this.state);
+    alert('form submitted successfully');
   };
 
   handleChange = ({ target: { name, value } }) => {
