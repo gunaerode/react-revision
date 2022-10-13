@@ -10,7 +10,8 @@ body {
   margin: 80px;
 }
 
-form, .counter {
+form,
+.counter {
   margin: 10px auto;
   padding: 10px;
   border: 1px solid blue;
@@ -21,7 +22,21 @@ form, .counter {
   padding-bottom: 20px;
 }
 
-
 div > label {
-  margin:10px 10px 0 0;
+  margin: 10px 10px 0 0;
+}
+
+/* React router work */
+
+nav {
+  background-color: aliceblue;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+div {
+  padding: 1rem 2rem;
 }

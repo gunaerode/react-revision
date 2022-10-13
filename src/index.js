@@ -1,7 +1,9 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
-import App from './containers/App';
+import { BrowserRouter } from 'react-router-dom';
+import './App.css';
+import App from './App';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -12,4 +14,10 @@ import App from './containers/App';
 
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(<App tab="home" />);
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
