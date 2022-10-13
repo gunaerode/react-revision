@@ -1,3 +1,12 @@
+## Revision ([docs](https://reactjs.org/) or [new docs](https://beta.reactjs.org/))
+
+---
+
+- #### Upgrade react v17 to v18
+  - [react upgrade guide](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
