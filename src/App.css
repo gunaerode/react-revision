@@ -35,8 +35,20 @@ nav {
 
 nav a {
   margin-right: 1rem;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 div {
   padding: 1rem 2rem;
+}
+
+/* NavLink active class */
+nav a.active {
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
 }

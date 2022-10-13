@@ -1,11 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
+  const navLinkStyle = ({ isActive }) => {
+    return isActive
+      ? {
+          backgroundColor: 'blue',
+        }
+      : { backgroundColor: 'gray' };
+  };
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+      <NavLink style={navLinkStyle} to="/" end>
+        Home
+      </NavLink>
+      <NavLink style={navLinkStyle} to="/about">
+        About
+      </NavLink>
     </nav>
   );
 }

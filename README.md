@@ -6,6 +6,9 @@
   - [react upgrade guide](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html)
   - [academind](https://academind.com/tutorials/react-18-update-guide)
 
+- #### Study urls
+  - [React router 6.4](https://reactrouter.com/en/main/components/nav-link) (Note: when you use <NavLink> use `end` in the parent route so that active class wont persiste <NavLink to="/" end>)
+
 ---
 
 # Getting Started with Create React App
