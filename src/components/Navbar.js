@@ -10,12 +10,18 @@ function Navbar() {
       : { backgroundColor: 'gray' };
   };
   return (
-    <nav>
+    <nav className='primary'>
       <NavLink style={navLinkStyle} to="/" end>
         Home
       </NavLink>
       <NavLink style={navLinkStyle} to="/about">
         About
+      </NavLink>
+      <NavLink style={navLinkStyle} to="/product">
+        Product
+      </NavLink>
+      <NavLink style={navLinkStyle} to="/profile">
+        Profile
       </NavLink>
     </nav>
   );

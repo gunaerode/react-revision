@@ -33,7 +33,7 @@ nav {
   padding: 1rem 2rem;
 }
 
-nav a {
+nav.primary a {
   margin-right: 1rem;
   color: white;
   font-weight: bold;
@@ -46,9 +46,13 @@ div {
 }
 
 /* NavLink active class */
-nav a.active {
+nav.primary a.active {
   color: white;
   font-weight: bold;
   padding: 1rem;
   text-decoration: none;
+}
+
+nav a {
+  margin-right: 2rem;
 }
