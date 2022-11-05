@@ -2,8 +2,11 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 // import About from './components/About';
 import { Admin } from './components/Admin';
+import { AuthProvider } from './components/auth';
+import { Authenticate } from './components/Authenticate';
 import { FeaturedProduct } from './components/FeaturedProduct';
 import Home from './components/Home';
+import { Login } from './components/Login';
 import Navbar from './components/Navbar';
 import { NewProduct } from './components/NewProduct';
 import NoMatch from './components/NoMatch';
@@ -16,7 +19,7 @@ const LazyAbout = lazy(() => import ('./components/About'));
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,10 +34,11 @@ function App() {
           <Route path=':id' element={<UserDetails/ >} />
           <Route path='admin' element={<Admin/ >} />
         </Route>
-        <Route path='/profile' element={<Profile />}></Route>
-        <Route path="*" element={<NoMatch />} />
+        <Route path='/profile' element={<Authenticate><Profile /></Authenticate>}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path="*" element={<NoMatch />} ></Route>
       </Routes>
-    </>
+    </AuthProvider>
   );
 }
 
